@@ -1,0 +1,22 @@
+{
+  "type": "service_account",
+  "project_id": "foundersvoice-speech-alpha",
+  "private_key_id": "739413c9fea69b4178ad915e4be982af2f698837",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDydFIDYPwMGZ9z\nmv53asaztFMztMo2GgPij7BgVnr3c81yN/KtiimpYC7kfv1tXMo1P8dMbHDR+QC+\nmPiP1n4c999OhQUt1mQ16vCJHPz8rMdWbiwSyUlwsU+GHf+891vyGkXyWzo0+Pk1\n+aZNtx3Bl4LAUj8/tkvSlmJ0zuvCYxx3TnM5xYDTRUhrN+E3E3/KQQYN5FaXgA5l\nVSXAWi5Ft5gIFRInfQv2y65siNKH2HhswGua/x/nByaoDHccl2KIUjJrYHRzYTvQ\nldjzT2vG6mxjNpofWCiMMmCgE6jpKx5QB1KklpYbC4cPK8VbNk6SZs5cw0jlMhMA\nMqzjJTxtAgMBAAECggEATsYGQ3zGR3Qnv1rTZJ83kfl7sugBbxSCwKCo0JQofa+N\nR5fv6/xgztwmQC0WT+r+89AWA7mT6lS5rjNrRuiMrwLF9e/4H81xX6dGoXXeqIXG\neklvXmcxykCBsvSaO54urHlm0nhbcAyYg7XqF4PwUg7U94GBdUTYW8JqmMMGDHCf\nTwj+IqAH0Iwgu+OcGgLtBsO5Y6MDBDnqCyXEl5Qfshu4Iy404JryTitsje6AWsRL\nbvHYanf8B4pxX5ImeUNrRH32M91P3xeTtWQK3L4ff20Ktv1++eeuZPTtN5PZBbi2\nbGdZC9WAd/iB1RHX55lSKseElfBlOdBlre1WnzFnQQKBgQD8J4xv0o8YXDjP/lee\n2wTlyMo45pmC8S04dT0hPD/JspN5OJoA8NwwL70uO666mOrH03B3rfsiCjBYEFhm\nDLyDs0pW6V+cUYOBZEKea1Zy9x+L9iF9g2N9vEi7wZV6iyBlZvd2OuL8WJq4XEsb\nf5HJZGg1ZshVvAammr2dK0fL8QKBgQD2JuaoEjKjwRLHahg5ornv40cqXIMY6OgC\nr4vJovTzZuqf7HzJKdaZ51QzKCu8hXH8TZoRkfNbtK1wFO0EjaZrwGvFH6OfiVQO\n7mn/JDVGaWyqNAUiSoenTk3EaSNj6OVFDtcSfSv7B56nB2CS2mnjYGXIwftw2At2\nCN64+tfkPQKBgAUNQcoHvOgvCNBZ9yVum+WCpVKIhDDUZiSIbMYar+h5lGzMToGQ\nUckBW9fuSCzi3WlNeiZbrPlcnOVWxn6c6LX2xJmDKXA3Tdwsxwznd57sBozGTJt4\nI2kkeYyRb046NVbyvih3O470s3zYFIUjhCc1xMS1H3RgRP3Xgc8BS/nxAoGBAOzn\npckOsqQ+N3ermaMnBXNmt+CCZz47Mska8RvgdYYpgBjo/3SQitVW+ge+WtG3UWw1\nt9m/MYwKiX489Z0TQ5+i81YmTFFIV5mDRorj605YOthY9rP5LTQNvfUSB5ip1rcv\nQDmwNPsGa2BwTjcodQ78gRnF8Ny7YdR5VvqLmes1AoGBALKZaaFouKpnwdLR5AzN\naDsvDd3e4mln7HLqLY/ddY/HTjTs8ALn62F87TaW+AXNFtWXY2tfb3c9zIsnezpj\n8XleixOMRVJmfkK309gA2a3yQW7LOOKkTpFZ1uej6unhN/CMpjHmwjpg3dLl99yP\nxzn+73c88KwCUohhRTwaNQMC\n-----END PRIVATE KEY-----\n",
+  "client_email": "foundersvoice-speech-alpha@appspot.gserviceaccount.com",
+  "client_id": "102473871325253885227",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/foundersvoice-speech-alpha%40appspot.gserviceaccount.com"
+}
+
+gcloud auth print-access-token
+access_token
+
+
+curl -s -k -H "Content-Type: application/json" \
+    -H "Authorization: Bearer access_token" \
+    https://speech.googleapis.com/v1beta1/speech:syncrecognize \
+    -d @sync-request.json
+    

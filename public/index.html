@@ -10,15 +10,33 @@
 
   </head>
   <body>
+    <header class="top-header">
+
+            <ul>
+
+
+            <a ui-sref="account"><li>account</li></a>
+            <a ui-sref="home"><li>home</li></a>
+            <a ui-sref="login"><li>login</li></a>
+
+            </ul>
+      <div class="min-box">
+      </div>
+
+    </header>
+
+
 
     <main>
       <section class="mainsection">
 
+        <nav class= sideBar>
+
+        </nav>
 
 
 
-
-              <ui-view></ui-view>
+              <ui-view> </ui-view>
 
 
 
@@ -33,10 +51,14 @@
 
 
 
-    <!--ADD ALL YOUR SCRIPTS HERE -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="./app.js" charset="utf-8"></script>
     <script src="./js/homeController.js" charset="utf-8"></script>
+    <script src="./js/service.js" charset="utf-8"></script>
+    <script src="./js/accountController.js" charset="utf-8"></script>
+    <script src="./js/loginController.js" charset="utf-8"></script>
+
   </body>
 </html>

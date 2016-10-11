@@ -1,0 +1,21 @@
+
+
+
+
+<!-- not sure if i have to pass in text to this function -->
+<button ng-click="getAllData()" type="button" name="button">get</button>
+<input type="text" name="name" value="" placeholder="name" ng-model="textfilter.arrayname"/>
+
+
+
+
+
+
+    <div class="textboxforhistory" ng-repeat="text in texts | filter: textfilter " >
+      <h1>{{text.arrayname}}</h1>
+
+
+        <button type="button" ng-show="datacheck" ng-click='datacheck(text)' name="button"></button>
+                
+                <button type="button" name="button">{{michael2}}</button>
+    </div>

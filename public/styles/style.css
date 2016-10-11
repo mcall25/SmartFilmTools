@@ -1,19 +1,18 @@
+
 .mainsection {
     display: flex;
-    height: 85vh;
+    height: 100vh;
     width: 90vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
 }
 
 .textbox{
-  height: 200px;
-  width: 20px;
+  height: 220px;
+  width: 50px;
   /* color: red; */
   /* border-bottom: black; */
   background: blue;
-  width: 320px;
+  width: 360px;
   padding: 9px;
   border: 5px solid gray;
   margin: 4px;
@@ -32,8 +31,155 @@
   background-color: white;
   height: 185px;
 }
+/*signin for google starts here*/
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 375px) {
+  .min-box{
+    height: 32px;
+      width: 14vw;
+      background-color: black;
+      padding: 0px 10px 0px 10;
+      /* margin: auto; */
+      /* margin-left: 2px; */
+      /* margin-top: 5px; */
+      float: left;
+  }
+
+  .top-header{
+    height: 120px;
+    width: 95vw;
+    background-color: #7a7a86;
+  }
+
+
+}
+
+
+@media  screen and (min-width:376px) {
+  .min-box{
+    height: 32px;
+      width: 14vw;
+      background-color: blue;
+      padding: 0px 10px 0px 10;
+      /* margin: auto; */
+      /* margin-left: 2px; */
+      /* margin-top: 5px; */
+      float: left;
+  }
+
+  .top-header{
+    height: 120px;
+    width: 95vw;
+    background-color: red;
+  }
+}
+
+
+/*the sidboard should now start to come out*/
+  @media only screen and (min-width:500px) and (max-width:5000px) {
+    .min-box{
+      height: 32px;
+        width: 14vw;
+        background-color: green;
+        padding: 0px 10px 0px 10;
+        /* margin: auto; */
+        /* margin-left: 2px; */
+        /* margin-top: 5px; */
+        float: left;
+    }
+
+    .top-header{
+      height: 120px;
+      width: 95vw;
+      background-color: pink;
+    }
+
+    .sideBar{
+      height: 100vh;
+      width: 22vw;
+      background-color: red;
+    }
+
+  }
+
+
+/*to get the flex to work with query, i need to add in all the info belwo*/
+/*@media screen and (min-width: 750px) {
   .mainsection {
       display: flex;
       height: 85vh;
@@ -43,4 +189,4 @@
       flex-direction: row;
   }
 
-}
+}*/

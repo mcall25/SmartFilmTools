@@ -1,22 +1,27 @@
 
-  <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <link rel="stylesheet" href="../styles/reset.css" media="screen" title="no title">
-      <link rel="stylesheet" href="../styles/base.css" media="screen" title="no title">
-      <link rel="stylesheet" href="../styles/style.css" media="screen" title="no title">
-
-  </head>
+<div class="textbox">
+  <button  type="button" name="button">upload</button>
 
 
-    <div class="textbox">
-        <textarea  rows="4" cols="50" class="textarea">
-            At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-            </textarea>
-    </div>
+</div>
 
-    <div class="textbox">
-        michael
-    </div>
 
-    <button ng-click="input(text)" type="button" name="button">save</button>
+
+  <div class="textbox">
+    <!-- i think i am sending the first text box to the backend -->
+        <textarea ng-mouseup="showSelectedText()" ng-model='text' rows="4" cols="50" class="textarea">
+        </textarea>
+  </div>
+
+  <button ng-click="getSelectionText(highlightedText)" type="button" name="button">keep </button>
+
+  <div class="textbox">
+      <textarea ng-model='textOnBox2' rows="4" cols="50" class="textarea">
+
+      </textarea>
+
+  </div>
+
+
+    <button ng-click="input(textOnBox2)" type="button" name="button">save</button>
+    <button ng-click="clear()" type="button" name="button">clear</button>

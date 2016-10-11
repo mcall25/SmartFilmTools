@@ -1,1 +1,1 @@
-insert into text (textid, arrayName) values ($1, $2);
+insert into text (textid, arrayname) values ($1, $2);
