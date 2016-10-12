@@ -10,12 +10,12 @@
 
 
 
+<!-- ************this will desplay all the texts inputs on the data base ******************************* -->
+    <div class="textboxforhistory" ng-repeat="text in texts | filter: textfilter track by $index" >
+              <h1>{{text.arrayname}}</h1>
+<!-- ******** this button will display the word count of the text ********************************************               -->
+        <button type="button" ng-click='datacheck(text, $index)' name="button"></button>
+              <h1>{{text.count}}</h1>
+              <h1>{{text.len}}</h1>
 
-    <div class="textboxforhistory" ng-repeat="text in texts | filter: textfilter " >
-      <h1>{{text.arrayname}}</h1>
-
-
-        <button type="button" ng-show="datacheck" ng-click='datacheck(text)' name="button"></button>
-                
-                <button type="button" name="button">{{michael2}}</button>
     </div>

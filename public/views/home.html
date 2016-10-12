@@ -1,27 +1,39 @@
 
-<div class="textbox">
-  <button  type="button" name="button">upload</button>
+<div class="text_boxes_for_home_page">
 
 
+      <div class="textbox">
+        <button  type="button" name="button">upload</button>
+
+
+      </div>
+
+
+
+        <div class="textbox">
+          <!-- i think i am sending the first text box to the backend -->
+              <textarea ng-mouseup="showSelectedText()" ng-model='text' rows="4" cols="50" class="textarea">
+              </textarea>
+        </div>
+
+        <div class="div_for_keep_button">
+        <button ng-click="getSelectionText(highlightedText)" type="button" name="button">keep </button>
+        </div>
+
+
+        <div class="textbox">
+          <textarea ng-model='textOnBox2' rows="4" cols="50" class="textarea">
+            </textarea>
+        </div>
+
+
+        <div class="div_for_keep_button">
+          <button ng-click="input(textOnBox2)" type="button" name="button">save</button>
+
+        </div>
+
+        <div class="div_for_keep_button">
+          <button ng-click="clear()" type="button" name="button"> clear </button> 
+
+        </div>
 </div>
-
-
-
-  <div class="textbox">
-    <!-- i think i am sending the first text box to the backend -->
-        <textarea ng-mouseup="showSelectedText()" ng-model='text' rows="4" cols="50" class="textarea">
-        </textarea>
-  </div>
-
-  <button ng-click="getSelectionText(highlightedText)" type="button" name="button">keep </button>
-
-  <div class="textbox">
-      <textarea ng-model='textOnBox2' rows="4" cols="50" class="textarea">
-
-      </textarea>
-
-  </div>
-
-
-    <button ng-click="input(textOnBox2)" type="button" name="button">save</button>
-    <button ng-click="clear()" type="button" name="button">clear</button>

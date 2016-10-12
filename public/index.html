@@ -10,40 +10,38 @@
 
   </head>
   <body>
-    <header class="top-header">
-
-            <ul>
 
 
-            <a ui-sref="account"><li>account</li></a>
-            <a ui-sref="home"><li>home</li></a>
-            <a ui-sref="login"><li>login</li></a>
 
-            </ul>
-      <div class="min-box">
+
+    <!-- template header on the top of the page -->
+    <div class="container-fluid">
+
+            <button class="top-botton" type="button" name="button"><a ui-sref="account">account</a></button>
+            <button class="top-botton" type="button" name="button"><a ui-sref="home">home</a></button>
+            <button class="top-botton" type="button" name="button"><a ui-sref="login">login</a></button>
+
+    </div>
+
+
+    <main class="main_section_entire_page">
+
+  
+    <!-- main section for content on the website -->
+      <div class=input_section>
+        <ui-view> </ui-view>
       </div>
 
-    </header>
 
+      <div class="footer">
 
+      </div>
 
-    <main>
-      <section class="mainsection">
-
-        <nav class= sideBar>
-
-        </nav>
-
-
-
-              <ui-view> </ui-view>
-
-
-
-
-
-      </section>
     </main>
+
+
+
+
 
 
 

@@ -39,14 +39,22 @@ angular.module('app1').service('service', function($http){
                     return response.data;
               });
           };
-
+// ********************** connects to the datacheck on accountController and send the arrayname length ************************
           this.dataAnalysis = function(text){
-            var a1 = text.arrayname.split(' ')
-            var a2 = a1.filter(function(a, b, c){
+              var a1 = text.arrayname.split(' ')
+              var a2 = a1.filter(function(a, b, c){
+                      return a !=='';
+              })
+              return a2.length;
+          };
 
-                    return a !=='';
-            })
-              this.michael = a2 
+// ********************** connects to the datacheck on accountController and send the arrayname length ************************
+          this.estTime = function(text){
+              var a1 = text.arrayname.split(' ');
+              var a2 = a1.filter(function(a, b, c){
+                      return a !=='';
+              });
+              return Math.round(a2.length / 1.833) + " " + 'sec';
+          };
 
-          }
-       })
+       });

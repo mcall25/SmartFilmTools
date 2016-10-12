@@ -88,7 +88,7 @@ app.use(cors(corsOptions));
     app.use(express.static(__dirname + '/public'));
 
 
-// endpoints for the server
+// **************** endpoints for the server *******************************************************************
 app.post('/user', controller.Create);
 app.get('/users', controller.GetAll);
 app.post('/api/text', controller.createText);
