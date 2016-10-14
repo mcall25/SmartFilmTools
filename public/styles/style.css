@@ -316,10 +316,62 @@
         font-size: 38px;
         }
 
+/************ 1st screen ***********************/
+  @media all and (min-width: px) {
+
+    .glyphicon-menu-hamburger:before {
+        visibility: hidden;
+        }
+
+        .how_the_app_works_section {
+          flex-direction: row;
+        }
+
+        .take_video {
+            height: 60vh;
+            width: 60vw;
+            margin: 5px;
+        }
+        .edit_text {
+          height: 60vh;
+          width: 60vw;
+          margin: 5px;
+        }
+        .SaveContent  {
+          height: 60vh;
+          width: 60vw;
+          margin: 5px;
+        }
+
+
+}
+
+/************ 2nd screen ***********************/
   @media all and (min-width: 760px) {
 
     .glyphicon-menu-hamburger:before {
         visibility: hidden;
-
         }
+
+        .how_the_app_works_section {
+          flex-direction: row;
+        }
+
+        .take_video {
+            height: 60vh;
+            width: 60vw;
+            margin: 5px;
+        }
+        .edit_text {
+          height: 60vh;
+          width: 60vw;
+          margin: 5px;
+        }
+        .SaveContent  {
+          height: 60vh;
+          width: 60vw;
+          margin: 5px;
+        }
+
+
 }
