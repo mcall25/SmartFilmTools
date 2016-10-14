@@ -3,37 +3,42 @@
 
 
       <div class="textbox">
-        <button  type="button" name="button">upload</button>
-
-
+        <div ng-mouseup="startButton(event);"><img alt="Start" id="start_img" src="https://speechlogger.appspot.com/images/micoff2.png"></div>
+        <div ng-mouseup="endButton();"><img alt="Start" id="start_img" src="https://speechlogger.appspot.com/images/micoff2.png"></div>
       </div>
 
 
-
+      <!-- text box for hightlight text and the keep button -->
         <div class="textbox">
-          <!-- i think i am sending the first text box to the backend -->
-              <textarea ng-mouseup="showSelectedText()" ng-model='text' rows="4" cols="50" class="textarea">
+
+              <textarea ng-model='results1' ng-click="showSelectedText()" ng-model='text' rows="4" cols="50" class="textarea">
+                      {{results1}}
               </textarea>
+              <div class="div_for_keep_button">
+              <button ng-click="getSelectionText(highlightedText)" type="button" name="button">keep </button>
+              </div>
+
         </div>
 
-        <div class="div_for_keep_button">
-        <button ng-click="getSelectionText(highlightedText)" type="button" name="button">keep </button>
-        </div>
+
+
+
 
 
         <div class="textbox">
           <textarea ng-model='textOnBox2' rows="4" cols="50" class="textarea">
             </textarea>
+            <div class="div_for_keep_button">
+              <button ng-click="input(textOnBox2)" type="button" name="button">save</button>
+            </div>
+
+            <div class="div_for_keep_button">
+              <button ng-click="clear()" type="button" name="button"> clear </button>
+            </div>
         </div>
 
 
-        <div class="div_for_keep_button">
-          <button ng-click="input(textOnBox2)" type="button" name="button">save</button>
 
-        </div>
 
-        <div class="div_for_keep_button">
-          <button ng-click="clear()" type="button" name="button"> clear </button> 
 
-        </div>
 </div>

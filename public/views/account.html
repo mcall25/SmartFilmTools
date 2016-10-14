@@ -1,21 +1,35 @@
 
 
 
-
-<!-- not sure if i have to pass in text to this function -->
-<button ng-click="getAllData()" type="button" name="button">get</button>
-<input type="text" name="name" value="" placeholder="name" ng-model="textfilter.arrayname"/>
+<div class="history_of_text">
 
 
 
+            <!-- not sure if i have to pass in text to this function -->
+            <button ng-click="getAllData()" type="button" name="button">get</button>
+            <input type="text" name="name" value="" placeholder="name" ng-model="textfilter.arrayname"/>
 
 
-<!-- ************this will desplay all the texts inputs on the data base ******************************* -->
-    <div class="textboxforhistory" ng-repeat="text in texts | filter: textfilter track by $index" >
-              <h1>{{text.arrayname}}</h1>
-<!-- ******** this button will display the word count of the text ********************************************               -->
-        <button type="button" ng-click='datacheck(text, $index)' name="button"></button>
-              <h1>{{text.count}}</h1>
-              <h1>{{text.len}}</h1>
 
-    </div>
+
+         <div class="inner_div_for_text_history">
+
+
+
+
+                  <!-- ************this will desplay all the texts inputs on the data base ******************************* -->
+
+                      <div class="textboxforhistory" ng-repeat="text in texts | filter: textfilter track by $index" >
+                            <div class="div_for_the_text_history">
+                                <h1>{{text.arrayname}}</h1>
+                            </div>
+                  <!-- ******** this button will display the word count of the text ********************************************   -->
+                          <button type="button" ng-click='datacheck(text, $index)' name="button"></button>
+                                <h1>{{text.count}}</h1>
+                                <h1>{{text.len}}</h1>
+
+                    </div>
+
+
+            </div>
+</div>

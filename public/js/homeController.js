@@ -46,11 +46,55 @@ $scope.getSelectionText = function() {
       textOnBox2 = "";
 };
 
-// plan - write out what functionailty i want and then creat function piece by piece to get that to work
-    // when the mouse click is finish, i need to invoke this function
+      var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+      $scope.results1 = '';
+      var results2 = '';
+
+      SpeechRecognition.continuous = true;   //Suitable for dictation.
+      SpeechRecognition.interimResults = true;  //If we want to start receiving results even if they are not final.
+      //Define some more additional parameters for the recognition:
+      SpeechRecognition.lang = "en-US";
+      SpeechRecognition.maxAlternatives = 1; //Since from our experience, the highest result is really the best...
+
+        $scope.startButton = function(event) {
+                SpeechRecognition = new webkitSpeechRecognition(); //That is the object that will manage our whole recognition process.
+                SpeechRecognition.start()
+
+                  SpeechRecognition.onresult = function(event) { //the event holds the results
+                //Yay – we have results! Let’s check if they are defined and if final or not:
+                    if (typeof(event.results) === 'undefined') { //Something is wrong…
+                        recognition.stop();
+                        return;
+                    }
+
+                    for (var i = event.resultIndex; i < event.results.length; ++i) {
+                        if (event.results[i].isFinal) { //Final results
+                            console.log("final results: " + event.results[i][0].transcript);   //Of course – here is the place to do useful things with the results.
+                              results2 = event.results[i][0].transcript;
+
+                        } else {   //i.e. interim...
+                            console.log("interim results: " + event.results[i][0].transcript);  //You can use these results to give the user near real time experience.
+                            $scope.results1 = event.results[i][0].transcript;
+                        }
+                    } //end for loop
+
+                    $scope.results1 = results2;
+                    console.log($scope.results1 + ' ' + "this is results1");
+
+                }
+    }
+          $scope.results1 = results2;
 
 
-  // $scope.$watch('selected', function(newValue, oldValue) {
-  //     console.log('newValue' ,newValue, 'oldValue', oldValue);
-  //   });
+        $scope.endButton = function(event) {
+              SpeechRecognition.stop()
+
+        }
+
+
+
+
+
+
+
 });

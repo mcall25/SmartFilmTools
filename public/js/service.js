@@ -58,3 +58,6 @@ angular.module('app1').service('service', function($http){
           };
 
        });
+
+
+  // ***************** speech to text reconginzation *************************************************************************************
