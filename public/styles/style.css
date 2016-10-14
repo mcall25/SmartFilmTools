@@ -26,13 +26,26 @@
 }
 
 .hamburger_bar{
-    height: 273px;
-    width: 141px;
-    background-color: #2F343C;
-    position: absolute;
-    margin-left: 1px;
-    border: #204083;
-    border-style: solid;
+  height: 104px;
+  width: 141px;
+  background-color: #2F343C;
+  position: absolute;
+  margin-left: 1px;
+  border: #204083;
+  border-style: solid;
+  border: 1px solid gray;
+  margin: 3px;
+  overflow: hidden;
+  /* background: rgba(0,0,0,.4); */
+  box-shadow: 0 0 30px 0 rgba(0,0,0,.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger_bar li {
+    font-size: 22px;
+    color: #337ab7;
+    text-decoration: none;
 }
 
 .main_section_entire_page{
@@ -122,7 +135,13 @@
     border-left: none;
     border-right: none;
     border-bottom: none;
+
 }
+.footer h1{
+  margin: 0px;
+  padding: 0px;
+}
+
 
 .contact_information {
   font-size: 15px;
@@ -139,7 +158,7 @@
 .contact_information h1{
     font-size: 17px;
     color: white;
-    padding: 22px;
+
 }
 
 .logo {
@@ -170,50 +189,64 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-image: url('https://hd.unsplash.com/photo-1464639351491-a172c2aa2911');
+    background-size: cover;
+    background-position-x: 50%;
 
 }
 .inner_div_for_text_history {
   overflow: auto;
     height: 70vh;
     width: 50vw;
-    background-color: beige;
+    background-color: #2F343C;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 23px;
+    opacity: .5;
+    border-style: solid;
+    border: 4px solid gray;
+    margin: 15px;
+    overflow: hidden;
+    /* background: rgba(0,0,0,.4); */
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.25);
+        overflow: scroll;
+
+
 
 }
-.div_for_the_text_history{
-  height: 89px;
-    width: 200px;
-    background-color: pink;
-}
-
-
-
+    .div_for_the_text_history{
+          height: 80px;
+          width: 47vw;
+          background-color: black;
+    }
 
 
       /*div below google and explains how the app works */
       .how_the_app_works_section {
         background-color: #2F343C;
-        height: 72vh;
+        height: 67vh;
         width: 91vw;
         display: flex;
         justify-content: center; */
         margin-top: 10px;
+
         flex-direction: column;
         justify-content: start;
         align-items: center;
         margin-top: 20p;
         border-width: thick;
         border-style: solid;
-        border-color: #787878;
+        /*border-color: #787878;
+        background-image: url('https://hd.unsplash.com/photo-1464639351491-a172c2aa2911');
+        background-size: cover;
+        background-position-x: 50%;*/
 
       }
 
       /*small div inside the how_the_app_works_section to explain the app*/
     .take_video {
-      height: 120px;
+      height: 100px;
       width: 68vw;
       margin-top: 15px;
       background-color: black;
@@ -226,6 +259,7 @@
       flex-direction: column;
       opacity: 0.5;
       color: white;
+      margin: 5px;
     }
 
       .take_video h1 {
@@ -237,7 +271,7 @@
 
       /*small div inside the how_the_app_works_section to explain the app*/
         .edit_text {
-          height: 120px;
+          height: 100px;
           width: 68vw;
           margin-top: 15px;
           background-color: black;
@@ -250,6 +284,7 @@
           flex-direction: column;
           opacity: 0.5;
           color: white;
+          margin: 5px;
       }
 
       .edit_text h1 {
@@ -260,7 +295,7 @@
       }
       /*small div inside the how_the_app_works_section to explain the app*/
       .SaveContent {
-        height: 120px;
+        height: 100px;
         width: 68vw;
         margin-top: 15px;
         background-color: black;
@@ -272,20 +307,21 @@
         align-items: center;
         flex-direction: column;
         opacity: 0.5;
-        color: white;;
+        color: white;
+        margin: 5px;
       }
 
       .SaveContent  h1 {
         font-size: 22px;
         color: white;
         opacity: 0.8;
-            width: 250px
+        width: 250px
       }
 
 
       .text_boxes_for_home_page {
-            background-color: bisque;
-            height: 91vh;
+            background-color: #2F343C;
+            height: 85vh;
             width: 91vw;
             padding: 12px;
             display: flex;
@@ -301,14 +337,20 @@
       }
 
       .div_for_keep_button{
-                  height: 20px;
-                  width: 50px;
-                  background: cadetblue;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  margin: 1px;
+        height: 52px;
+        width: 15vw;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+        border: 1px solid gray;
+        margin: 3px;
+        overflow: hidden;
+        background: rgba(0,0,0,.4);
+        box-shadow: 0 0 30px 0 rgba(0,0,0,.25);
       }
+
 
     .glyphicon-menu-hamburger:before {
         content: "\e236";
@@ -316,41 +358,135 @@
         font-size: 38px;
         }
 
+      .buttonsfunc {
+          background-color: pink;
+        }
+        .glyphicon-chevron-down:before {
+        content: "\e114";
+        font-size: 30px;
+    }
+    .text_from_data_base {
+      font-size: 15px;
+      color: white;
+      padding: 6px;
+    }
+    .get_data_button {
+      background-color: #204083;
+      width: 21vw;
+      margin: 4px;
+      color: white;
+      border-style: solid;
+      border: 2px solid gray;
+      margin: 15px;
+      overflow: hidden;
+      /* background: rgba(0,0,0,.4); */
+      box-shadow: 0 0 30px 0 rgba(0,0,0,.25);
+    }
+
 /************ 1st screen ***********************/
-  @media all and (min-width: px) {
+  @media all and (min-width: 0px) and (max-width: 500px){
 
     .glyphicon-menu-hamburger:before {
-        visibility: hidden;
+        visibility: visible;
         }
 
         .how_the_app_works_section {
-          flex-direction: row;
+          flex-direction: column;
         }
 
         .take_video {
-            height: 60vh;
-            width: 60vw;
-            margin: 5px;
+          height: 11vh;
+          width: 71vw;
+
+        }
+        .take_video h1 {
+          font-size: 15px;
+          width: 175px;
+
         }
         .edit_text {
-          height: 60vh;
-          width: 60vw;
-          margin: 5px;
+          height: 11vh;
+          width: 71vw;
+
+        }
+        .edit_text h1 {
+          font-size: 15px;
+          width: 175px;
+
         }
         .SaveContent  {
-          height: 60vh;
-          width: 60vw;
-          margin: 5px;
+          height: 11vh;
+          width: 71vw;
+
         }
+        .SaveContent  h1 {
+          font-size: 15px;
+          width: 175px;
+
+        }
+
+        .div_for_keep_button{
+          height: 52px;
+          width: 88px;
+
+        }
+
 
 
 }
 
 /************ 2nd screen ***********************/
-  @media all and (min-width: 760px) {
+  @media all and (min-width: 500px) and (max-width: 700px) {
 
     .glyphicon-menu-hamburger:before {
-        visibility: hidden;
+        visibility: visible;
+        }
+
+        .how_the_app_works_section {
+          flex-direction: column;
+        }
+
+        .take_video {
+          height: 16vh;
+          width: 71vw;
+
+        }
+        .take_video h1 {
+          font-size: 24px;
+          width: 300px;
+
+        }
+        .edit_text {
+          height: 16vh;
+          width: 71vw;
+
+        }
+        .edit_text h1 {
+          font-size: 24px;
+          width: 300px;
+
+        }
+        .SaveContent  {
+          height: 16vh;
+          width: 71vw;
+
+        }
+        .SaveContent  h1 {
+          font-size: 24px;
+          width: 300px;
+
+        }
+        .div_for_keep_button{
+            width: 15vw;
+
+        }
+
+}
+/************ 3nd screen ***********************/
+  @media all and (min-width: 701px) and (max-width: 1000px) {
+
+    .glyphicon-menu-hamburger:before {
+        visibility: visible;
         }
 
         .how_the_app_works_section {
@@ -358,20 +494,102 @@
         }
 
         .take_video {
-            height: 60vh;
-            width: 60vw;
-            margin: 5px;
+          height: 50vh;
+          width: 24vw;
+
+        }
+        .take_video h1 {
+          font-size: 24px;
+          width: 134px;
+          height: 40vh;
+
         }
         .edit_text {
-          height: 60vh;
-          width: 60vw;
-          margin: 5px;
+          /*background-color: red;*/
+          height: 50vh;
+          width: 24vw;
+
+        }
+        .edit_text h1 {
+          font-size: 24px;
+          width: 134px;
+          height: 40vh;
+
         }
         .SaveContent  {
-          height: 60vh;
-          width: 60vw;
-          margin: 5px;
+          /*background-color: red;*/
+          height: 50vh;
+          width: 24vw;
+
+        }
+        .SaveContent  h1 {
+          font-size: 24px;
+          width: 134px;
+          height: 40vh;
+
         }
 
+}
+/************ 4nd screen ***********************/
+  @media all and (min-width: 1001px) {
+
+    .glyphicon-menu-hamburger:before {
+        visibility: visible;
+        }
+
+        .how_the_app_works_section {
+          flex-direction: row;
+        }
+
+        .take_video {
+          /*background-color: yellow;*/
+          height: 60vh;
+          width: 31vw;
+          background-image: url('https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=38c8a7e6f1875b5ca428292134310979');
+          background-size: cover;
+          background-position-x: 50%;
+        }
+        .take_video h1 {
+          font-size: 36px;
+          width: 300px;
+          height: 40vh;
+
+        }
+        .edit_text {
+
+          height: 60vh;
+          width: 31vw;
+          background-image: url('https://hd.unsplash.com/photo-1453738773917-9c3eff1db985');
+          background-size: 102%;
+          background-position-x: 40%;
+          background-position-y: -19%;
+          /* background-position: inherit; */
+          background-origin: content-box;
+
+        }
+        .edit_text h1 {
+          font-size: 36px;
+          width: 300px;
+          height: 40vh;
+
+        }
+        .SaveContent  {
+
+          height: 60vh;
+          width: 31vw;
+          background-image: url('https://images.unsplash.com/photo-1475586036352-6a29507e6683?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=264f158642ae6a3aba10393fc158910f');
+          background-size: 102%;
+          background-position-x: 40%;
+          background-position-y: -19%;
+          /* background-position: inherit; */
+          background-origin: content-box;
+
+        }
+        .SaveContent  h1 {
+          font-size: 36px;
+          width: 300px;
+          height: 40vh;
+
+        }
 
 }
