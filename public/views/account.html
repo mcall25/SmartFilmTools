@@ -10,25 +10,29 @@
             <input class="get_data_button" type="text" name="Name" value="" placeholder="Filter" ng-model="textfilter.arrayname"/>
 
 
+            <button class="anaybutons" type="button"  ng-click='datacheck(text, $index)'  name="button">Word Count</button>
 
 
          <div class="inner_div_for_text_history">
 
 
-
+                      <!-- ******** this button will display the word count of the text ********************************************   -->
 
                   <!-- ************this will desplay all the texts inputs on the data base ******************************* -->
 
                       <div class="textboxforhistory" ng-repeat="text in texts | filter: textfilter track by $index" >
+
                             <div class="div_for_the_text_history">
+                                <!-- Click me: <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"><br/><div> -->
                                 <h1 class='text_from_data_base'>{{text.arrayname}}</h1>
-                            </div>
-                  <!-- ******** this button will display the word count of the text ********************************************   -->
-                          <button type="button" ng-click='datacheck(text, $index)' name="button"></button>
-                                <h1>{{text.count}}</h1>
-                                <h1>{{text.len}}</h1>
+                                <h1 ng-hide='checked' class='data'> - {{text.count}} Words  </h1>
 
                             </div>
+
+
+                            </div>
+
+
 
 
             </div>

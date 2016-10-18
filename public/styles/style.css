@@ -179,19 +179,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 20px;
 }
 
 .history_of_text {
   height: 81vh;
     width: 91vw;
-    background-color: red;
+    background-color: #2F343C;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url('https://hd.unsplash.com/photo-1464639351491-a172c2aa2911');
+    /*background-image: url('https://hd.unsplash.com/photo-1464639351491-a172c2aa2911');
     background-size: cover;
-    background-position-x: 50%;
+    background-position-x: 50%;*/
 
 }
 .inner_div_for_text_history {
@@ -219,6 +221,10 @@
           height: 80px;
           width: 47vw;
           background-color: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 4px;
     }
 
 
@@ -254,12 +260,13 @@
       border-style: solid;
       border-color: #787878;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       flex-direction: column;
       opacity: 0.5;
       color: white;
       margin: 5px;
+      opacity: .9;
     }
 
       .take_video h1 {
@@ -279,12 +286,13 @@
           border-style: solid;
           border-color: #787878;
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;;
           align-items: center;
           flex-direction: column;
           opacity: 0.5;
           color: white;
           margin: 5px;
+          opacity: .9;
       }
 
       .edit_text h1 {
@@ -303,12 +311,13 @@
         border-style: solid;
         border-color: #787878;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         opacity: 0.5;
         color: white;
         margin: 5px;
+        opacity: .9;
       }
 
       .SaveContent  h1 {
@@ -332,8 +341,9 @@
 
 
       .textarea{
-        background-color: white;
+        background-color: gray;
         height: 185px;
+        width: 400px;
       }
 
       .div_for_keep_button{
@@ -359,7 +369,7 @@
         }
 
       .buttonsfunc {
-          background-color: pink;
+          background-color: black;
         }
         .glyphicon-chevron-down:before {
         content: "\e114";
@@ -382,7 +392,19 @@
       /* background: rgba(0,0,0,.4); */
       box-shadow: 0 0 30px 0 rgba(0,0,0,.25);
     }
-
+    .anaybutons {
+            font-size: 13px;
+      background-color: gray;
+      /* size: 22px; */
+      width: 100px;
+      /* height: 22px; */
+      margin-top: 6px;
+          margin-bottom: 20px;
+    }
+.data {
+  color: white;
+  font-size: 18px
+}
 /************ 1st screen ***********************/
   @media all and (min-width: 0px) and (max-width: 500px){
 
@@ -559,10 +581,10 @@
 
           height: 60vh;
           width: 31vw;
-          background-image: url('https://hd.unsplash.com/photo-1453738773917-9c3eff1db985');
-          background-size: 102%;
+          background-image: url('https://images.unsplash.com/photo-1476136236990-838240be4859?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=68532953beb8ead03e4a461a3a74434b');
+          background-size: 169%;
           background-position-x: 40%;
-          background-position-y: -19%;
+          background-position-y: 300%;
           /* background-position: inherit; */
           background-origin: content-box;
 
@@ -578,9 +600,9 @@
           height: 60vh;
           width: 31vw;
           background-image: url('https://images.unsplash.com/photo-1475586036352-6a29507e6683?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=264f158642ae6a3aba10393fc158910f');
-          background-size: 102%;
+          background-size: 99%;
           background-position-x: 40%;
-          background-position-y: -19%;
+          background-position-y: 0%;
           /* background-position: inherit; */
           background-origin: content-box;
 
