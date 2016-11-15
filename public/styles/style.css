@@ -116,6 +116,7 @@
   border-right: 1px solid transparent;
   text-shadow: rgba(0, 0, 0, .5) -1px -1px 0;
   background-color: #204083;
+  border: 2px solid;
 }
 
 
@@ -370,6 +371,7 @@
 
       .buttonsfunc {
           background-color: black;
+          border: black;
         }
         .glyphicon-chevron-down:before {
         content: "\e114";
@@ -567,9 +569,12 @@
           /*background-color: yellow;*/
           height: 60vh;
           width: 31vw;
-          background-image: url('https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=38c8a7e6f1875b5ca428292134310979');
+          /*background-image: url('https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=38c8a7e6f1875b5ca428292134310979');*/
+          background-image: url('../img/take.jpeg');
           background-size: cover;
           background-position-x: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
         .take_video h1 {
           font-size: 36px;
@@ -581,12 +586,14 @@
 
           height: 60vh;
           width: 31vw;
-          background-image: url('https://images.unsplash.com/photo-1476136236990-838240be4859?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=68532953beb8ead03e4a461a3a74434b');
+          /* background-image: url(https://images.unsplash.com/photo-1476136236990-838240be4859?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=68532953beb8ead03e4a461a3a74434b); */
+          background-image: url(../img/edit.jpeg);
           background-size: 169%;
-          background-position-x: 40%;
-          background-position-y: 300%;
+          background-position-x: 25%;
+          background-position-y: 97%;
           /* background-position: inherit; */
           background-origin: content-box;
+          background-repeat: no-repeat;
 
         }
         .edit_text h1 {
@@ -599,13 +606,15 @@
 
           height: 60vh;
           width: 31vw;
-          background-image: url('https://images.unsplash.com/photo-1475586036352-6a29507e6683?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=264f158642ae6a3aba10393fc158910f');
-          background-size: 99%;
+          /* background-image: url(https://images.unsplash.com/photo-1475586036352-6a29507e6683?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=264f158642ae6a3aba10393fc158910f); */
+          background-image: url(../img/3.jpeg);
+          background-size: 103%;
           background-position-x: 40%;
-          background-position-y: 0%;
+          background-position-y: 37%;
           /* background-position: inherit; */
           background-origin: content-box;
-
+          background-repeat: no-repeat;
+          background-size: cover;
         }
         .SaveContent  h1 {
           font-size: 36px;
